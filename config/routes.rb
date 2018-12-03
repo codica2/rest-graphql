@@ -1,3 +1,17 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  namespace :api do
+    namespace :v1 do
+
+      resources :authors, except: %i[new edit] do
+        delete :delete_multiple, on: :collection
+      end
+
+      resources :books, except: %i[new edit] do
+        delete :delete_multiple, on: :collection
+      end
+
+    end
+  end
+
 end

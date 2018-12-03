@@ -11,6 +11,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'faker'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
@@ -37,7 +38,6 @@ end
 group :test do
   gem 'database_cleaner'
   gem 'factory_bot_rails'
-  gem 'faker'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
 end
