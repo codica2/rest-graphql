@@ -1,0 +1,19 @@
+/.bundle
+# Ignore all logfiles and tempfiles.
+.idea/*
+/log/*
+/tmp/*
+# Ignore uploaded files in development
+/storage/*
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/node_modules
+/yarn-error.log
+.byebug_history
+.ruby-version
+.ruby-gemset
+config/database.yml
+coverage/
+public/system/*
+public/uploads/*
+.env
