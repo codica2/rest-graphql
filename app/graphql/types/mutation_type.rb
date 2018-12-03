@@ -1,6 +1,5 @@
-module Types
+Types::MutationType = GraphQL::ObjectType.define do
+  name 'Mutation'
 
-  class MutationType < Types::BaseObject
-  end
-
+  field :createAuthor, function: Resolvers::CreateAuthor.new
 end
