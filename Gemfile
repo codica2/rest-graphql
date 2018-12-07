@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 gem 'graphql'
+gem 'graphql-preload', '~> 2.0.1'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'search_object'
 gem 'search_object_graphql'
-# gem 'rack-cors'
 
 group :development, :test do
   gem 'faker'
