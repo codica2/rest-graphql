@@ -3,5 +3,5 @@ Types::AuthorType = GraphQL::ObjectType.define do
 
   field :id, !types.ID
   field :name, !types.String
-  field :books, -> { !types[Types::BookType] }
+  field :books, types[Types::BookType]
 end
