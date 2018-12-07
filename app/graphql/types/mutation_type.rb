@@ -1,10 +1,10 @@
 Types::MutationType = GraphQL::ObjectType.define do
   name 'Mutation'
 
-  field :createAuthor, function: Resolvers::AuthorResolver::Create.new
-  field :createBook,   function: Resolvers::BookResolver::Create.new
-  field :updateAuthor, function: Resolvers::AuthorResolver::Update.new
-  field :updateBook,   function: Resolvers::BookResolver::Create.new
-  field :deleteAuthor, function: Resolvers::AuthorResolver::Destroy.new
-  field :deleteBook, function: Resolvers::AuthorResolver::Destroy.new
+  field :createAuthor, function: Mutations::AuthorMutations::Create.new
+  field :createBook,   function: Mutations::BookMutations::Create.new
+  field :updateAuthor, function: Mutations::AuthorMutations::Update.new
+  field :updateBook,   function: Mutations::BookMutations::Create.new
+  field :deleteAuthor, function: Mutations::AuthorMutations::Destroy.new
+  field :deleteBook,   function: Mutations::AuthorMutations::Destroy.new
 end

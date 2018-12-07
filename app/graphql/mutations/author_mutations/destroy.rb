@@ -1,6 +1,6 @@
-module Resolvers
+module Mutations
 
-  module AuthorResolver
+  module AuthorMutations
 
     class Destroy < GraphQL::Function
 

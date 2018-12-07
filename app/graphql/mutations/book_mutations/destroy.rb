@@ -1,6 +1,6 @@
-module Resolvers
+module Mutations
 
-  module BookResolver
+  module BookMutations
 
     class Destroy < GraphQL::Function
 
