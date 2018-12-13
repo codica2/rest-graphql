@@ -1,12 +1,12 @@
-Types::BookType = GraphQL::ObjectType.define do
-  name 'Book'
+module Types
 
-  field :id, !types.ID
-  field :title, !types.String
-  field :description, types.String
-  field :authors, !types[Types::AuthorType] do
-    # preload includes authors and solves N+1 problem
-    preload :authors
-    resolve ->(obj, _args, _ctx) { obj.authors }
+  class BookType < Types::BaseObject
+
+    field :id, ID, "Book's id", null: false
+    field :title, String, "Book's title", null: false
+    field :description, String, "Book's description", null: true
+    field :authors, [Types::AuthorType], null: false
+
   end
+
 end

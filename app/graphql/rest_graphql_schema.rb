@@ -1,7 +1,8 @@
-RestGraphqlSchema = GraphQL::Schema.define do
-  use GraphQL::Batch
-  enable_preloading
+class RestGraphqlSchema < GraphQL::Schema
 
-  mutation(Types::MutationType)
-  query(Types::QueryType)
+  query Types::QueryType
+  mutation Types::MutationType
+
+  use GraphQL::Batch
+
 end
