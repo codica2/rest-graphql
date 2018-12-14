@@ -2,7 +2,7 @@ This is the base example of using REST and GraphQL API for your rails applicatio
 
 * [Models](#models)
 * [Getting all data](#getting-all-data)
-* [Finding the record](#finding-the-record)
+* [Finding a record](#finding-a-record)
 * [Creating a record](#createing-a-record)
 * [Record deleting](#record-deleting)
 
@@ -155,7 +155,7 @@ GraphQL request:
  <img src="public/images/result1.png" >
 </p>
 
-## Finding the record
+## Finding a record
 ### Rest API
 `app/controllers/api/v1/authors_controller.rb`:
 
