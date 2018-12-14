@@ -1,8 +1,5 @@
 # Rest API vs Graphql-ruby
 This application is using the [`graphql-ruby` gem](https://github.com/rmosolgo/graphql-ruby)
-Requirements:
-* Rails 5.2.2
-* Ruby 2.5.1
 
 ## Models
 
