@@ -1,5 +1,7 @@
 This is the base example of using REST and GraphQL API for your rails application
 
+[Models](#models)
+
 # Rest API vs Graphql-ruby
 This application is using the [`graphql-ruby` gem](https://github.com/rmosolgo/graphql-ruby)
 
