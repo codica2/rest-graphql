@@ -38,10 +38,6 @@ module Api
         @author.destroy
       end
 
-      def delete_multiple
-        Author.where(id: params[:author_ids]).destroy_all
-      end
-
       private
 
       def set_author

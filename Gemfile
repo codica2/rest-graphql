@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'active_model_serializers'
 gem 'graphql'
 gem 'graphql-preload', '~> 2.0.1'
 gem 'rails', '~> 5.2.1', '>= 5.2.1.1'

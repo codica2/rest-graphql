@@ -38,10 +38,6 @@ module Api
         @book.destroy
       end
 
-      def delete_multiple
-        Book.where(id: params[:book_ids]).destroy_all
-      end
-
       private
 
       def set_book
