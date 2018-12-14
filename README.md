@@ -1,13 +1,12 @@
+# Rest API vs Graphql-ruby
 This is the base example of using REST and GraphQL API for your rails application
+This application is using the [`graphql-ruby` gem](https://github.com/rmosolgo/graphql-ruby)
 
 * [Models](#models)
 * [Getting all data](#getting-all-data)
 * [Finding a record](#finding-a-record)
 * [Creating a record](#createing-a-record)
 * [Record deleting](#record-deleting)
-
-# Rest API vs Graphql-ruby
-This application is using the [`graphql-ruby` gem](https://github.com/rmosolgo/graphql-ruby)
 
 ## Models
 
