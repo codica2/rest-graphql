@@ -88,12 +88,12 @@ GET: `localhost:3000/api/v1/authors`:
         {
             "id": 28,
             "title": "A Catskill Eagle",
-            "description": "So what if the most meaningful day in your life was a simulation operating at minimum complexity."
+            "description": "This sounds like something The One True Morty might say."
         },
         {
             "id": 32,
             "title": "Moab Is My Washpot",
-            "description": "What is my purpose. You pass butter. Oh My God. Yeah, Welcome to the club pal."
+            "description": "I don't get it and I don't need to."
         }
     ]
   },
@@ -109,7 +109,7 @@ GET: `localhost:3000/api/v1/authors`:
           {
               "id": 32,
               "title": "Moab Is My Washpot",
-              "description": "What is my purpose. You pass butter. Oh My God. Yeah, Welcome to the club pal."
+              "description": "I don't get it and I don't need to."
           }
       ]
   },
@@ -155,6 +155,25 @@ GraphQL request:
  <img src="public/images/result1.png" >
 </p>
 
+This is how you can execute the query in Ruby:
+```ruby
+query_string = "
+  {
+    authors {
+      id
+      name
+      books {
+        id
+        title
+        description
+      }
+    }
+  }
+"
+
+RestGraphqlSchema.execute(query_string)
+```
+
 ## Finding a record
 ### Rest API
 `app/controllers/api/v1/authors_controller.rb`:
@@ -175,12 +194,12 @@ GET: `localhost:3000/api/v1/authors/16`:
         {
             "id": 28,
             "title": "A Catskill Eagle",
-            "description": "So what if the most meaningful day in your life was a simulation operating at minimum complexity."
+            "description": "This sounds like something The One True Morty might say."
         },
         {
             "id": 32,
             "title": "Moab Is My Washpot",
-            "description": "What is my purpose. You pass butter. Oh My God. Yeah, Welcome to the club pal."
+            "description": "I don't get it and I don't need to."
         }
     ]
 }
@@ -357,5 +376,6 @@ If you try delete the same record again server will response with empty object:
 </p>
 
 ## Usefull links
+* [GraphQL or REST? What should I use?](https://dev.to/sadarshannaiynar/graphql-or-rest-what-should-i-use-38mj)
 * [GraphQL guide](http://graphql-ruby.org/guides)
 * [How to graphql tutorial](https://www.howtographql.com/graphql-ruby/1-getting-started/)
