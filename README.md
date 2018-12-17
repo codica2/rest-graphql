@@ -327,7 +327,7 @@ end
 DELETE: `localhost:3000/api/v1/authors/58`:
 
 ```json
-Status: 204 No Content
+Status: '204 No Content'
 ```
 
 ## GraphQL
