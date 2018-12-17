@@ -379,3 +379,15 @@ If you try delete the same record again server will response with empty object:
 * [GraphQL or REST? What should I use?](https://dev.to/sadarshannaiynar/graphql-or-rest-what-should-i-use-38mj)
 * [GraphQL guide](http://graphql-ruby.org/guides)
 * [How to graphql tutorial](https://www.howtographql.com/graphql-ruby/1-getting-started/)
+
+## License
+Timebot is Copyright © 2015-2018 Codica. It is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## About Codica
+
+[![Codica logo](https://www.codica.com/assets/images/logo/logo.svg)](https://www.codica.com)
+
+rest-graphql is maintained and funded by Codica. The names and logos for Codica are trademarks of Codica.
+
+We love open source software! See [our other projects](https://github.com/codica2) or [hire us](https://www.codica.com/) to design, develop, and grow your product.
+
