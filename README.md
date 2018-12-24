@@ -220,7 +220,7 @@ Request:
  <img src="public/images/result2.png" >
 </p>
 
-## Createing a record
+## Creating a record
 ### Rest API
 `app/controllers/api/v1/authors_controller.rb`:
 ```ruby
@@ -375,7 +375,7 @@ If you try delete the same record again server will response with empty object:
  <img src="public/images/result5.png" >
 </p>
 
-## Usefull links
+## Useful links
 * [GraphQL or REST? What should I use?](https://dev.to/sadarshannaiynar/graphql-or-rest-what-should-i-use-38mj)
 * [GraphQL guide](http://graphql-ruby.org/guides)
 * [How to graphql tutorial](https://www.howtographql.com/graphql-ruby/1-getting-started/)
