@@ -381,7 +381,7 @@ If you try delete the same record again server will response with empty object:
 * [How to graphql tutorial](https://www.howtographql.com/graphql-ruby/1-getting-started/)
 
 ## License
-Timebot is Copyright © 2015-2018 Codica. It is released under the [MIT License](https://opensource.org/licenses/MIT).
+Timebot is Copyright © 2015-2019 Codica. It is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## About Codica
 
